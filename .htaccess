@@ -7,13 +7,13 @@
 
 	RewriteEngine on
 
-	RewriteCond %{REQUEST_URI} !^.*?/\.px_execute.php/
+	#RewriteCond %{REQUEST_URI} !^.*?/\.px_execute.php/
 	RewriteCond %{REQUEST_URI} /(.*?\.(?:html|htm|css|js))?$
-	RewriteRule ^(.*)$ \.px_execute\.php/$1 [L]
+	#RewriteRule ^(.*)$ \.px_execute\.php/$1 [L]
 
-	RewriteCond %{REQUEST_URI} !^.*?/\.px_execute.php/
-	RewriteCond %{REQUEST_URI} /(.*?\.(?:ignore)([\.\/].*)?)$
-	RewriteRule ^(.*)$ \.px_execute\.php/\.ignore.html [L]
+	#RewriteCond %{REQUEST_URI} !^.*?/\.px_execute.php/
+	#RewriteCond %{REQUEST_URI} /(.*?\.(?:ignore)([\.\/].*)?)$
+	#RewriteRule ^(.*)$ \.px_execute\.php/\.ignore.html [L]
 
 </IfModule>
 
